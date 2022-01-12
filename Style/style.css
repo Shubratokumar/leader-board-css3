@@ -11,7 +11,8 @@ font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat&family=Poppins&family=Roboto&display=swap');
 body{
     background-color: #E5E5E5;
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;   
 }
 main{
     display: flex;
@@ -32,6 +33,43 @@ main{
     margin-top: 3px;
     font-weight: 500;   
 }
+/* common codes starts here */
+/* Header starts here */
+.menubar{
+    background-color: #562EFF;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns:1fr 1fr;    
+    height: 94px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;  
+}
+.menu-left{
+    display: flex;    
+}
+.menu-right{
+    display: flex;
+    align-items: center;
+}
+.menu-right a{
+    text-decoration: none;
+    color: whitesmoke;    
+}
+.menu-left p,.menu-right a{
+    margin-left: 25px;
+}
+.menu-right i{
+    margin-left: 25px;
+}
+.menu-right img{
+    margin-left: 25px;
+}
+img{
+    width: 51px;
+    height: 51px;
+}
+/* Header ends here */
 /* Top Players and Top Blogs starts here */
 /* Top Players starts here */
 .top-players{
@@ -45,6 +83,11 @@ main{
 .player{
     display: flex;
     align-items: center;
+    box-shadow: 2px 2px 5px cyan;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: rgba(247, 204, 204, 0.432);
 }
 .player img{
     width: 65px;
@@ -68,7 +111,12 @@ main{
     grid-row-gap: 26px;
 }
 .blog{
-    display: flex;    
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(0, 60, 255);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: rgba(197, 197, 197, 0.432);    
 }
 .thumbnail img{
     width: 177px;
@@ -98,6 +146,12 @@ main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
+}
+.course{
+    box-shadow: 2px 2px 5px rgb(255, 72, 0);
+    border-radius: 10px;
+    padding-left: 5px;        
+    background-color: rgba(255, 232, 128, 0.432);
 }
 .course-banner img{
     width: 266px;
